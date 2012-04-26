@@ -18,8 +18,8 @@ autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,
 autocmd BufWritePre *.py :%s/\s\+$//e
 set t_Co=256
 colors molokai
-""colorscheme solarized
-""set background=dark
+"colorscheme solarized"
+"set background=dark
 
 " Minibuffer setting
 let g:miniBufExplMapWindowNavVim = 1 
@@ -27,12 +27,12 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1 
 let g:miniBufExplModSelTarget = 1 
 
-"" For Omni completion
-"" clt+x + ctl+o
+" For Omni completion
+" clt+x + ctl+o
 filetype plugin on
 set ofu=syntaxcomplete#Complete
 
-" <leader>=> _+'t' gives task list
+"<leader>=> _+'t' gives task list
 let g:tlTokenList = ['TODO', 'FIXME']
 let g:tlWindowPosition = 1
 let mapleader = "_"
@@ -41,4 +41,7 @@ let mapleader = "_"
 "use zR and zM to fold and unfold all folds
 set foldmethod=indent
 
-" TAGLIST :TlistToggle
+"TAGLIST :TlistToggle
+"
+"Auto Save when focus is lost
+au FocusLost * :wa
