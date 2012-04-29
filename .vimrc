@@ -46,5 +46,5 @@ set foldmethod=indent
 "Auto Save when focus is lost
 au FocusLost * :wa
 
-" Added new so that we stay under 80
-set colorcolumn=81
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
