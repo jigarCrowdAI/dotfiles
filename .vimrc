@@ -48,3 +48,6 @@ au FocusLost * :wa
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
+
+" remove the annoying search highlight with an esc
+nnoremap <esc> :noh<return><esc>
