@@ -1,3 +1,4 @@
+"test
 set title
 set ignorecase
 set smartcase
@@ -38,3 +39,4 @@ color molokai
 " Tabularize stuff
 " http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
 
+"Powerline stuff

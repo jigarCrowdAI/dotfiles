@@ -120,3 +120,4 @@ export LD_LIBRARY_PATH="~/projects/c6m/resourses/lib/":"/usr/lib/jni"
 # for open gl to work
 export LIBGL_ALWAYS_INDIRECT=1 
 
+#. ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh
