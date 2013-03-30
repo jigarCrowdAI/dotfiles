@@ -40,3 +40,9 @@ color molokai
 " http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
 
 "Powerline stuff
+set t_Co=256
+if has("gui_running")
+  let g:Powerline_symbols = "fancy"
+endif
+set laststatus=2
+set encoding=utf-8
