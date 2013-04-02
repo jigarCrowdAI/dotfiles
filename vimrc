@@ -48,3 +48,6 @@ if has("gui_running")
 endif
 set laststatus=2
 set encoding=utf-8
+
+"Nerd Tree mapping to ctl+n
+map <C-n> :NERDTreeToggle<CR>
