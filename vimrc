@@ -14,16 +14,18 @@ set autoindent
 set smartindent
 set expandtab
 set smarttab
+set foldmethod=marker
 
 " Pathogen
 filetype off " Pathogen needs to run before plugin indent on
+call pathogen#infect()
 call pathogen#incubate()
 call pathogen#helptags() " generate helptags for everything in 'runtimepath'
 filetype plugin indent on
-
 filetype plugin on
+filetype on
 
-nmap <F8> :TagbarToggle<CR>
+nmap <F5> :TagbarToggle<CR>
 
 syntax enable
 "set background=dark
