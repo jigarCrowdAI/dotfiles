@@ -1,42 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Dotfiles and Vim Stuff by artvandelay</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Dotfiles and Vim by artvandelay</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Dotfiles and Vim Stuff</h1>
-        <p></p>
 
-        <p class="view"><a href="https://github.com/artvandelay/dotfiles">View the Project on GitHub <small>artvandelay/dotfiles</small></a></p>
+    <header>
+      <div class="container">
+        <h1>Dotfiles and Vim</h1>
+        <h2></h2>
 
+        <section id="downloads">
+          <a href="https://github.com/artvandelay/dotfiles/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/artvandelay/dotfiles/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/artvandelay/dotfiles" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
 
-        <ul>
-          <li><a href="https://github.com/artvandelay/dotfiles/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/artvandelay/dotfiles/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/artvandelay/dotfiles">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>My Dotfiles Page</h1>
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="installation-instruction" class="anchor" href="#installation-instruction"><span class="octicon octicon-link"></span></a>Installation Instruction</h1>
 
-<hr><h2>Documentation for the Vim Bundles</h2>
+<p>Clone the Repo</p>
+
+<pre><code>cd ~
+git clone https://github.com/artvandelay/dotfiles.git
+</code></pre>
+
+<p>Create Symbolic Link to the Dot Files</p>
+
+<div class="highlight"><pre>ln -s  ~/dotfiles/vim ~/.vim
+ln -s dotfiles/bashrc ~/.bashrc
+ln -s dotfiles/vimrc ~/.vimrc
+</pre></div>
+
+<p>Restart your terminal and open Vim/ Gvim</p>
+
+<pre><code>gvim yourtestfile.cc
+</code></pre>
+
+<hr><h2>
+<a name="documentation-for-the-vim-bundles" class="anchor" href="#documentation-for-the-vim-bundles"><span class="octicon octicon-link"></span></a>Documentation for the Vim Bundles</h2>
 
 <h3>
-<a href="https://github.com/Raimondi/delimitMate">DelimitMate</a> </h3><p>This plug-in provides automatic closing of quotes, parenthesis, brackets, etc.</p>
+<a name="delimitmate-" class="anchor" href="#delimitmate-"><span class="octicon octicon-link"></span></a><a href="https://github.com/Raimondi/delimitMate">DelimitMate</a> </h3><p>This plug-in provides automatic closing of quotes, parenthesis, brackets, etc.</p>
 
 <h3>
-<a href="https://github.com/scrooloose/nerdcommenter">Nerd Commenter</a> </h3><p> Super awesome commenting tool.</p>
+<a name="nerd-commenter-" class="anchor" href="#nerd-commenter-"><span class="octicon octicon-link"></span></a><a href="https://github.com/scrooloose/nerdcommenter">Nerd Commenter</a> </h3><p> Super awesome commenting tool.</p>
 
 <p><strong>Usage</strong> </p>
 
@@ -45,45 +65,53 @@
 <li>[Leaderkey]+cu                   =&gt; un-Comment </li>
 <li>[Leaderkey]+cs                   =&gt; Sexy Comment<br>
 </li>
-</ul><h3><a href="https://github.com/scrooloose/nerdtree">Nerd Tree</a></h3><p>The NERD tree allows you to explore your filesystem and to open files and directories. It presents the filesystem to you in the form of a tree which you manipulate with the keyboard and/or mouse. It also allows you to perform simple filesystem operations.</p>
+</ul><h3>
+<a name="nerd-tree" class="anchor" href="#nerd-tree"><span class="octicon octicon-link"></span></a><a href="https://github.com/scrooloose/nerdtree">Nerd Tree</a>
+</h3><p>The NERD tree allows you to explore your filesystem and to open files and directories. It presents the filesystem to you in the form of a tree which you manipulate with the keyboard and/or mouse. It also allows you to perform simple filesystem operations.</p>
 
 <p><strong>Usage</strong></p>
 
 <ul>
 <li>:NERDTreeToggle</li>
 <li>Ctl+n</li>
-</ul><h3><a href="https://github.com/msanders/snipmate.vim">Snip Mate</a></h3><p>A snippet is a piece of often-typed text that you can insert into your document using a trigger word followed by a .</p>
+</ul><h3>
+<a name="snip-mate" class="anchor" href="#snip-mate"><span class="octicon octicon-link"></span></a><a href="https://github.com/msanders/snipmate.vim">Snip Mate</a>
+</h3><p>A snippet is a piece of often-typed text that you can insert into your document using a trigger word followed by a .</p>
 
 <p><strong>Usage</strong></p>
 
 <ul>
 <li>Type 'for'+tab and you should see a templated for loop.</li>
-</ul><h3><a href="https://github.com/ervandew/supertab">SuperTab</a></h3><p>Supertab is a vim plugin which allows you to use  for all your insert completion needs (:help ins-completion).</p>
+</ul><h3>
+<a name="supertab" class="anchor" href="#supertab"><span class="octicon octicon-link"></span></a><a href="https://github.com/ervandew/supertab">SuperTab</a>
+</h3><p>Supertab is a vim plugin which allows you to use  for all your insert completion needs (:help ins-completion).</p>
 
 <p><strong>Usage</strong></p>
 
 <ul>
 <li> Completion. Mind you it doesn't look through other files like omnicomplete</li>
-</ul><h3><a href="https://github.com/scrooloose/syntastic">Syntastic</a></h3><p>Syntastic is a syntax checking plugin that runs files through external syntax checkers and displays any resulting errors to the user</p>
+</ul><h3>
+<a name="syntastic" class="anchor" href="#syntastic"><span class="octicon octicon-link"></span></a><a href="https://github.com/scrooloose/syntastic">Syntastic</a>
+</h3><p>Syntastic is a syntax checking plugin that runs files through external syntax checkers and displays any resulting errors to the user</p>
 
 <p><strong>Usage</strong></p>
 
 <ul>
 <li>If there is a syntax error you should see it complain along the left column</li>
-</ul><h3><a href="https://github.com/godlygeek/tabular">Tabularize</a></h3><p>There are times when you can improve the readability of your code by lining up the elements on neighboring lines. </p>
+</ul><h3>
+<a name="tabularize" class="anchor" href="#tabularize"><span class="octicon octicon-link"></span></a><a href="https://github.com/godlygeek/tabular">Tabularize</a>
+</h3><p>There are times when you can improve the readability of your code by lining up the elements on neighboring lines. </p>
 
 <p><strong>Usage</strong></p>
 
 <ul>
 <li><a href="http://vimcasts.org/episodes/aligning-text-with-tabular-vim/">Short Vimeo Video Tutorial</a></li>
-</ul><h3><a href="https://github.com/Lokaltog/vim-powerline">Vim-Powerline</a></h3><p>Awesome bottom line for vim with lots of useful information. </p>
+</ul><h3>
+<a name="vim-powerline" class="anchor" href="#vim-powerline"><span class="octicon octicon-link"></span></a><a href="https://github.com/Lokaltog/vim-powerline">Vim-Powerline</a>
+</h3><p>Awesome bottom line for vim with lots of useful information. </p>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/artvandelay">artvandelay</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
