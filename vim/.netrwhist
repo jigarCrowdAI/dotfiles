@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/jdoshi/.vim'
 let g:netrw_dirhist_2='/home/jdoshi'
 let g:netrw_dirhist_3='/home/jdoshi/.vim'
+let g:netrw_dirhist_4='/home/robotics/Downloads/caffe-master/docs'
+let g:netrw_dirhist_5='/usr/lib/python2.7/dist-packages/gi/_gobject'
+let g:netrw_dirhist_6='/home/robotics/dotfiles/vim/bundle/snipmate.vim'

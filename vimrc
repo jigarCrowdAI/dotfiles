@@ -16,20 +16,19 @@ set expandtab
 set smarttab
 set foldmethod=marker
 
-" Pathogen
-filetype off " Pathogen needs to run before plugin indent on
-call pathogen#infect()
-call pathogen#incubate()
-call pathogen#helptags() " generate helptags for everything in 'runtimepath'
+""Pathogen
+filetype off "Pathogen needs to run before plugin indent on
+filetype plugin indent off
+execute pathogen#infect()
+execute pathogen#helptags() 
 filetype plugin indent on
 filetype plugin on
 filetype on
-
-nmap <F5> :TagbarToggle<CR>
+nmap <F5> :TagbarToggle<CR> "Press F5 to see tag bar
 
 syntax enable
 "set background=dark
-""set background=light
+"""set background=light
 "colorscheme solarized
 "let g:solarized_termtrans  = 1
 "let g:solarized_termcolors = 256
@@ -51,3 +50,6 @@ set encoding=utf-8
 
 "Nerd Tree mapping to ctl+n
 map <C-n> :NERDTreeToggle<CR>
+
+"Python Ctags trial"
+set tags+=$HOME/.vim/tags/python.ctags
