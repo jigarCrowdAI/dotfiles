@@ -53,3 +53,5 @@ map <C-n> :NERDTreeToggle<CR>
 
 "Python Ctags trial"
 set tags+=$HOME/.vim/tags/python.ctags
+
+autocmd FileType python setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
